@@ -1,0 +1,21 @@
+{
+  "name": "xmtp-ethbangkok",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w & sleep 1 && node --watch dist/index.js",
+    "start": "node dist/index.js",
+    "postinstall": "tsc"
+  },
+  "dependencies": {
+    "@1inch/cross-chain-sdk": "^0.1.10",
+    "@brian-ai/cdp-sdk": "^1.0.6",
+    "@xmtp/message-kit": "latest",
+    "ethers": "^6.13.4",
+    "web3": "^4.15.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
